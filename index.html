@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡ Dailbv Stamina - Тренировка скорости печати</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- НАВИГАЦИЯ -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">⚡ Dailbv Stamina</a>
+            <ul>
+                <li><a href="#features">Особенности</a></li>
+                <li><a href="#download">Скачать</a></li>
+                <li><a href="#requirements">Требования</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ГЕРОЙ С КОТИКОМ -->
+    <section class="hero">
+        <div class="hero-cat">
+            <div class="hero-content">
+                <h1>⚡ DAILBV STAMINA</h1>
+                <p>Тренируйте скорость печати с максимальной эффективностью</p>
+                <a href="#download" class="btn-download">🚀 Скачать сейчас</a>
+            </div>
+
+            <!-- КОТИК -->
+            <div class="cat-svg">
+                <svg viewBox="0 0 200 250" xmlns="http://www.w3.org/2000/svg">
+                    <!-- ТЕЛО -->
+                    <ellipse cx="100" cy="150" rx="50" ry="70" fill="#FFB84D" stroke="#333" stroke-width="2"/>
+                    
+                    <!-- ГОЛОВА -->
+                    <circle cx="100" cy="80" r="45" fill="#FFB84D" stroke="#333" stroke-width="2"/>
+                    
+                    <!-- УШИ -->
+                    <polygon points="70,30 50,10 60,50" fill="#FFB84D" stroke="#333" stroke-width="2"/>
+                    <polygon points="130,30 150,10 140,50" fill="#FFB84D" stroke="#333" stroke-width="2"/>
+                    
+                    <!-- ВНУТРИ УШЕЙ -->
+                    <polygon points="70,35 58,20 65,48" fill="#FFD8B8"/>
+                    <polygon points="130,35 142,20 135,48" fill="#FFD8B8"/>
+                    
+                    <!-- ГЛАЗА -->
+                    <circle cx="80" cy="70" r="12" fill="white" stroke="#333" stroke-width="1.5"/>
+                    <circle cx="120" cy="70" r="12" fill="white" stroke="#333" stroke-width="1.5"/>
+                    
+                    <!-- ЗРАЧКИ (АНИМИРОВАННЫЕ) -->
+                    <circle cx="80" cy="70" r="7" fill="#333" class="pupil" id="pupil1"/>
+                    <circle cx="120" cy="70" r="7" fill="#333" class="pupil" id="pupil2"/>
+                    
+                    <!-- БЛЕСК -->
+                    <circle cx="77" cy="67" r="2.5" fill="white"/>
+                    <circle cx="117" cy="67" r="2.5" fill="white"/>
+                    
+                    <!-- НОС -->
+                    <polygon points="100,85 95,95 105,95" fill="#FF69B4" stroke="#333" stroke-width="1"/>
+                    
+                    <!-- РОТ -->
+                    <path d="M 100 95 Q 90 105 85 103" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    <path d="M 100 95 Q 110 105 115 103" stroke="#333" stroke-width="2" fill="none" stroke-linecap="round"/>
+                    
+                    <!-- УСЫ -->
+                    <line x1="50" y1="80" x2="20" y2="75" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="50" y1="90" x2="20" y2="95" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="150" y1="80" x2="180" y2="75" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="150" y1="90" x2="180" y2="95" stroke="#333" stroke-width="2" stroke-linecap="round"/>
+                    
+                    <!-- ЛАПЫ -->
+                    <ellipse cx="70" cy="220" rx="15" ry="25" fill="#FFB84D" stroke="#333" stroke-width="1.5"/>
+                    <ellipse cx="130" cy="220" rx="15" ry="25" fill="#FFB84D" stroke="#333" stroke-width="1.5"/>
+                    
+                    <!-- ПОДУШЕЧКИ ЛАП -->
+                    <ellipse cx="70" cy="235" rx="8" ry="6" fill="#FFD8B8"/>
+                    <ellipse cx="130" cy="235" rx="8" ry="6" fill="#FFD8B8"/>
+                    
+                    <!-- ХВОСТ (АНИМИРОВАННЫЙ) -->
+                    <path d="M 140 180 Q 180 160 175 100" stroke="#FFB84D" stroke-width="12" fill="none" stroke-linecap="round" class="tail" id="tail"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- ОСОБЕННОСТИ -->
+    <section class="info-section" id="features">
+        <div class="container">
+            <h2>Почему DAILBV STAMINA?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Супер быстрая</h3>
+                    <p>Лёгкое приложение, которое работает на любом компьютере без задержек</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Два языка</h3>
+                    <p>Тренируйтесь на русском или английском языке на выбор</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Подробная статистика</h3>
+                    <p>Отслеживайте скорость, точность и прогресс в реальном времени</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎮</div>
+                    <h3>Три режима</h3>
+                    <p>Слова, цифры + символы, разные уровни сложности</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Красивый дизайн</h3>
+                    <p>Современный тёмный интерфейс с голубым неоном</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⏸️</div>
+                    <h3>Пауза по требованию</h3>
+                    <p>Нажмите ESC для паузы в любой момент упражнения</p>
+                </div>
+            </div>
+
+            <div class="description-section">
+                <h3>📖 О программе</h3>
+                <p>DAILBV STAMINA — это профессиональный тренажёр для улучшения скорости и точности печати. Программа разработана с учётом лучших практик в обучении и включает множество полезных функций.</p>
+                
+                <p>Приложение поддерживает русский и английский языки, предлагает несколько режимов тренировки и три уровня сложности. Вы сможете видеть подробную статистику своих результатов, включая скорость печати (символов в минуту), точность и количество ошибок.</p>
+
+                <p>Особенность программы — удобная система паузы: просто нажмите ESC, чтобы остановиться, и выберите, хотите ли вы продолжить, начать заново или вернуться в меню. Время паузы не учитывается в результатах, поэтому вы получите точный подсчёт вашей производительности.</p>
+
+                <div class="stats">
+                    <div class="stat">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Уровня сложности</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">2</div>
+                        <div class="stat-label">Языка</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Режимов</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Упражнений</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СКАЧИВАНИЕ -->
+    <section class="download-section" id="download">
+        <div class="container">
+            <h2>🚀 Начните прямо сейчас</h2>
+            <p>Скачайте DAILBV STAMINA и начните тренировку</p>
+            
+            <div class="file-info">
+                <p>📦 Файл приложения:</p>
+                <div class="file-name">6767.exe</div>
+                <p>💾 Размер: 5.2 МБ</p>
+                <p>✓ Версия: 6.0</p>
+                <p>🔒 Полностью безопасно</p>
+            </div>
+
+            <a href="javascript:downloadFile()" class="btn-download">⬇️ СКАЧАТЬ 6767.exe</a>
+
+            <div class="requirements" id="requirements">
+                <h3>✓ Требования к системе:</h3>
+                <div class="req-grid">
+                    <div class="req-item">
+                        <strong>ОС:</strong> Windows 7 и выше
+                    </div>
+                    <div class="req-item">
+                        <strong>Процессор:</strong> Intel/AMD 1 ГГц
+                    </div>
+                    <div class="req-item">
+                        <strong>Оперативная память:</strong> 256 МБ
+                    </div>
+                    <div class="req-item">
+                        <strong>Место на диске:</strong> 10 МБ
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- СКРИНШОТЫ -->
+    <section class="screenshots-section">
+        <div class="container">
+            <h2>📸 Скриншоты</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot">
+                    <div class="screenshot-image">⚙️</div>
+                    <div class="screenshot-title">Главное меню</div>
+                    <p>Выбор языка, режима и уровня сложности</p>
+                </div>
+                <div class="screenshot">
+                    <div class="screenshot-image">⌨️</div>
+                    <div class="screenshot-title">Тренировка</div>
+                    <p>Печатайте текст с отслеживанием статистики</p>
+                </div>
+                <div class="screenshot">
+                    <div class="screenshot-image">📊</div>
+                    <div class="screenshot-title">Результаты</div>
+                    <p>Подробный анализ вашей производительности</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- КОНТАКТЫ -->
+    <section class="info-section" id="contact">
+        <div class="container">
+            <h2>📧 Обратная связь</h2>
+            <div class="description-section">
+                <h3>Нашли баг или есть предложение?</h3>
+                <p>DAILBV STAMINA постоянно совершенствуется. Если у вас есть идеи, предложения или вы нашли ошибку, пожалуйста, дайте нам знать. Ваша обратная связь помогает нам делать приложение лучше!</p>
+                <p style="margin-top: 20px; color: #00d4ff;">Created by Dailbv</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОДВАЛ -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 DAILBV STAMINA. Все права защищены.</p>
+            <p>Версия 6.0 | Создано Dailbv</p>
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">Discord</a>
+                <a href="#">Twitter</a>
+            </div>
+            <p style="margin-top: 20px; font-size: 12px;">Это приложение создано для улучшения навыков печати.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
